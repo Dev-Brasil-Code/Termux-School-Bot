@@ -51,14 +51,14 @@ Hit help button to find out more about how to use me</b>""",
                             reply_markup=InlineKeyboardMarkup(
                                 [
                                 [
-                                        InlineKeyboardButton('🙆🏻‍♂️ Help', callback_data="help"),
-                                        InlineKeyboardButton('Feedback 👥', url='https://telegram.me/zautebot')
+                                        InlineKeyboardButton('🙆🏻‍♂️ Ajuda', callback_data="help"),
+                                        InlineKeyboardButton('Feedback 👥', url='https://telegram.me/claynetchat')
                                     ],[
-                                        InlineKeyboardButton('🧑‍🔧 Owner', url='https://t.me/ZauteKm'),
-                                        InlineKeyboardButton('🤖 Bot Lists', url='https://t.me/BotzListBot'),
-                                        InlineKeyboardButton('Channel 📢', url='https://t.me/TGBotsProJect')
+                                        InlineKeyboardButton('🧑‍🔧 Criador', url='https://t.me/admclaynet'),
+                                        InlineKeyboardButton('🤖 Mais Bots', url='https://t.me/hcnetibrtelemar'),
+                                        InlineKeyboardButton('Canal 📢', url='https://t.me/hcnetibrtelemar')
                                     ],[
-                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/ZauteKm/AnyDLBot'),
+                                        InlineKeyboardButton('🔻 Source Code -GitHub🔻', url='https://github.com/Dev-Brasil-Code'),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -69,23 +69,24 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await ZauteKm.send_message(
                chat_id=message.chat.id,
-               text="""<b><u>AnyDLBot Help!</u></b>
+               text="""<b><u>Raissa Bot Help!</u></b>
+74
 
-Just send a Youtube, Pornhub or Xhamster video url to download it in video or audio format!
+Basta enviar um url de vídeo do Youtube, Pornhub ou Xhamster para fazer o download em formato de vídeo ou áudio!
 
-<b>▷ Please Join :</b> @TGBotsProJect""",
+<b>▷ Por favor se junte :</b> @Claynetchat""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "🔙 Back", callback_data="start"),
+                                            "🔙 Voltar", callback_data="start"),
                                         InlineKeyboardButton(
-                                            "About 🙄", callback_data="about"),
+                                            "Sobre 🙄", callback_data="about"),
                                   ],[
-                                        InlineKeyboardButton("🧑‍🔧 Owner", url="https://t.me/ZauteKm"),
-                                        InlineKeyboardButton("🤖 Bot Lists", url="https://t.me/BotzListBot"),
-                                        InlineKeyboardButton('Channel 📢', url="https://t.me/TGBotsProJect")
+                                        InlineKeyboardButton("🧑‍🔧 Criador", url="https://t.me/ZauteKm"),
+                                        InlineKeyboardButton("🤖 Mais Bots", url="https://t.me/HCnetibrtelemar"),
+                                        InlineKeyboardButton('Canal 📢', url="https://t.me/HCnetibrtelemar")
                                     ],[
-                                        InlineKeyboardButton("🔻 Source Code -GitHub🔻", url="https://github.com/ZauteKm/AnyDLBot"),
+                                        InlineKeyboardButton("🔻 Source Code -GitHub🔻", url="https://github.com/Dev-Brasil-Code"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -96,21 +97,21 @@ async def about(client, message):
     if message.chat.type == 'private':   
         await ZauteKm.send_message(
                chat_id=message.chat.id,
-               text="""<b><u>About AnyDLBot!</u></b>
+               text="""<b><u>Sobre Raissa Bot!</u></b>
 
-<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/ZauteKm">Zaute Km</a>
+<b>▷ 🧑‍🔧 Developer:</b> <a href="https://t.me/AdmClaynet">Luan Dev</a>
 
 <b>▷ 📚 Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>▷ 📢 Channel:</b> @TGBotsProJect
+<b>▷ 📢 Channel:</b> @HCnetibrtelemar
 
-<b>▷ 🌀 Source Code:</b> <a href="https://github.com/ZauteKm/AnyDLBot">GitHub</a>""",
+<b>▷ 🌀 Source Code:</b> <a href="https://github.com/Dev-Brasil-Code">GitHub</a>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "🔙 Back", callback_data="help"),
+                                            "🔙 Voltar", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Credit ❤️", url="https://t.me/ZauteBot"),
+                                            "Credito ❤️", url="https://t.me/ZauteBot"),
                                   ],[
                                         InlineKeyboardButton("🧑‍🔧 Onwer", url="https://t.me/ZauteKm"),
                                         InlineKeyboardButton("🤖 Bot Lists", url="https://t.me/BotzListBot"),
@@ -136,7 +137,7 @@ async def ytdl_with_button(c: Client, message: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry, You are Banned to use me. Contact my [master](https://t.me/ZauteBot).",
+                    text="Desculpe, você está proibido de me usar. Contate meu [master](https://t.me/ZauteBot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -144,11 +145,11 @@ async def ytdl_with_button(c: Client, message: Message):
         except UserNotParticipant:
             await c.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use me 😉**",
+                text="**Junte-se ao canal de atualizações para me usar 😉**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{Config.UPDATES_CHANNEL}")
+                            InlineKeyboardButton("Junte-se ao canal de atualizações", url=f"https://t.me/{Config.UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -158,12 +159,12 @@ async def ytdl_with_button(c: Client, message: Message):
         except Exception:
             await c.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [master](https://t.me/zautebot).",
+                text="Algo deu errado. Contate meu[master](https://t.me/zautebot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-        "**Choose Download type👇**",
+        "**Escolha o tipo de download👇**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
