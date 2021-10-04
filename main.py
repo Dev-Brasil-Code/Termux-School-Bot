@@ -51,7 +51,7 @@ Clique no botão de ajuda para saber mais sobre como me usar</b>""",
                             reply_markup=InlineKeyboardMarkup(
                                 [
                                 [
-                                        InlineKeyboardButton('🙆🏻‍♂️ Help', callback_data="Ajuda"),
+                                        InlineKeyboardButton('🙆🏻‍♂️ Help', callback_data="help"),
                                         InlineKeyboardButton('Feedback 👥', url='https://telegram.me/admclaynet')
                                     ],[
                                         InlineKeyboardButton('🧑‍🔧 Dono', url='https://t.me/admclaynet'),
