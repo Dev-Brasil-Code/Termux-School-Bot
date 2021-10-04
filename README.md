@@ -17,7 +17,7 @@
 ### Deploy to Heroku 😎
 Press the button Deploy to heroku and give the values for the config vars. 👇
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Dev-Brasil-Code/Termux-School-Bot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ZauteKm/AnyDLBot)
 
 ### Credits
 
