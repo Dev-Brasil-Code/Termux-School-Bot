@@ -9,7 +9,7 @@
         "TGBotsProJect"
     ],
     "website": "https://www.devbrasilcode.xyz",
-    "repository": "https://github.com/Dev-Brasil-Code",
+    "repository": "https://github.com/Dev-Brasil-Code/Termux-School-Bot",
     "success_url": "https://t.me/hcnetibrtelemar",
     "env": {
         "TG_BOT_TOKEN": {
